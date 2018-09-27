@@ -1,20 +1,22 @@
 "use strict";
 
 var gulp = require('gulp'),
-    plugins = require('gulp-load-plugins')();
+    $ = require('gulp-load-plugins')();
 
     var config ={
         
     };
     gulp.task('fonts', function(){
         return gulp.src('./node_modules/font-awesome/fonts/**.*')
-        .pipe(gulp.dest('./fonts'));
+        .pipe(gulp.dest('fonts'));
     });
     gulp.task('css', function() {
         return gulp.src('scss/meta.scss')
-        .pipe(plugins.sass({
-            outputStyle: 'compressed',
-        }).on('error', plugins.sass.logError))
-        .pipe(plugins.autoprefixer())
+        .pipe($.sourcemaps.init())
+        .pipe($.sass({
+            outputstyle: 'expanded',
+        }).on('error', $.sass.logError))
+        .pipe($.autoprefixer())
+        .pipe($.sourcemaps.write())
         .pipe(gulp.dest('css'))
     });
