@@ -26,7 +26,7 @@ $template = JPATH_THEMES;
 </head>
 
 <body>
-    <header class="header">
+    <header class="header fixed-top">
         <div class="container">
             <div class="row">
                 <div class="logo col-12 col-md-2 col-lg-3">
@@ -35,10 +35,10 @@ $template = JPATH_THEMES;
                     </a>
                 </div>
                 <div class="menu col-12 col-md-10 col-lg-9">
-
                     <jdoc:include type="modules" name="position-0" />
-                    <jdoc:include type="modules" name="position-1" />
-
+                    <div class="clearfix header-extra">
+                        <jdoc:include type="modules" name="position-1" />
+                    </div>
                 </div>
 
             </div>
@@ -48,8 +48,12 @@ $template = JPATH_THEMES;
         <jdoc:include type="message" />
         <jdoc:include type="component" />
     </main>
-    <footer class="container">
-        <jdoc:include type="modules" name="position-14" />
+    <footer class="fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <jdoc:include type="modules" name="position-14" />
+            </div>
+        </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

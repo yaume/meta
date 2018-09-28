@@ -24,31 +24,5 @@
 @import "node_modules/font-awesome/scss/font-awesome.scss";
 
 //Ajout
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1111;
-    background:$white;
-}
-.logo {
-    position: relative;
-    display: block;
-    margin: 10px 0 0;
-    padding: 10px 15px;
-    img{
-        width: 140px;
-        height: 35px;
-    }
-}
-@include media-breakpoint-down(md) { 
-    .logo, .logo-mobile {
-        margin: 0;
-        padding: 20px 0;
-        text-align: center;
-    }
-    .menu{
-        position: absolute;
-        padding: 0;
-    }
-}
+@import "header";
+@import "footer";
