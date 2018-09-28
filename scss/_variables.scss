@@ -202,7 +202,7 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1140px
+  xl: 1200px //orig 1140px
 );
 
 @include _assert-ascending($container-max-widths, "$container-max-widths");
@@ -222,7 +222,7 @@ $grid-gutter-width:           30px;
 $line-height-lg:              1.5;
 $line-height-sm:              1.5;
 
-$border-width:                0;
+$border-width:                1px;
 $border-color:                $gray-300;
 
 $border-radius:               .25rem;
@@ -642,9 +642,9 @@ $nav-divider-margin-y:              ($spacer / 2);
 // Navbar
 
 $navbar-padding-y:                  ($spacer);
-$navbar-padding-x:                  $spacer*2;
+$navbar-padding-x:                  ($spacer*2);
 
-$navbar-nav-link-padding-x:         $spacer*2;
+$navbar-nav-link-padding-x:         $spacer;
 
 $navbar-brand-font-size:            $font-size-lg;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link

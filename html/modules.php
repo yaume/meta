@@ -44,7 +44,7 @@ function modChrome_menu($module,&$params,&$attribs)
 	echo '</nav>';
 }
 function modChrome_footerMenu($module,&$params,&$attribs){
-	echo '<nav class="navbar col-lg-6 navbar-expand-lg navbar-light bg-light">';
+	echo '<nav class="navbar col-lg-6 py-0 navbar-expand-lg navbar-light bg-light">';
 	echo $module->content;
 	echo '</nav>';
 }
