@@ -4,7 +4,7 @@ header {
     width: 100%;
     z-index: 1111;
     background: $white;
-
+    transition: all 0.3s linear 0s;
     .logo {
         position: relative;
         display: block;
@@ -48,6 +48,7 @@ header {
             padding: 5px 10px;
             position: relative;
             top: -10px;
+            cursor: pointer;
         }
     }
 }

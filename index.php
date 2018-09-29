@@ -9,12 +9,8 @@
 
 // No direct access.
 defined('_JEXEC') or die;
-
-// Output as HTML5
-$this->setHtml5(true);
-JHtml::_('stylesheet', 'meta.css', array('version' => 'auto', 'relative' => true));
-$app    = JFactory::getApplication();
-$template = JPATH_THEMES;
+// Load template framework 
+include_once JPATH_THEMES . '/' . $this->template . '/lib/head.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +36,7 @@ $template = JPATH_THEMES;
                         <jdoc:include type="modules" name="position-1" />
                     </div>
                 </div>
-
+            <jdoc:include type="modules" name="position-2" />
             </div>
         </div>
     </header>
