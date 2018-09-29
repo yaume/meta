@@ -5,6 +5,11 @@ header {
     z-index: 1111;
     background: $white;
     transition: all 0.3s linear 0s;
+
+    .container {
+        position: relative
+    }
+
     .logo {
         position: relative;
         display: block;
@@ -17,9 +22,10 @@ header {
         }
     }
 
-    .navbar{
+    .navbar {
         margin-right: 2rem;
     }
+
     .header-extra {
         position: absolute;
         top: 1.375rem;
@@ -51,20 +57,80 @@ header {
             cursor: pointer;
         }
     }
+
+    .search-form {
+        display: none;
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        color: $gray-700;
+        background-color: $white;
+
+        &.show {
+            z-index: 1000;
+            display: block;
+        }
+
+        .search-box {
+            height: 100%;
+            width: 100%;
+        }
+
+        .search-input {
+            position: relative;
+            top: 1rem;
+            border: 0;
+            outline: 0;
+            width: 99%;
+            height: 70%;
+            padding: 10px;
+            font-size: 30px;
+            border-radius: 0;
+        }
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
 }
 
 
 @include media-breakpoint-down(md) {
+    header {
 
-    .logo,
-    .logo-mobile {
-        margin: 0;
-        padding: 20px 0;
-        text-align: center;
-    }
+        .logo,
+        .logo-mobile {
+            margin: 0;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 1;
+        }
 
-    .menu {
-        position: absolute;
-        padding: 0;
+        .navbar-toggler {
+            z-index: 2;
+        }
+
+        .menu {
+            position: absolute;
+            padding: 0;
+        }
+        .search-form{
+            .search-input{
+                width: 80%;
+                margin:auto;
+            }
+            .close {
+                top:5%;
+                right:5%;
+            }
+        }
+        .header-extra{
+            right: 2rem;
+        }
     }
+.container{
+    width:100%;
+} 
 }

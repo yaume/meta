@@ -25,12 +25,12 @@ include_once JPATH_THEMES . '/' . $this->template . '/lib/head.php';
     <header class="header fixed-top">
         <div class="container">
             <div class="row">
-                <div class="logo col-12 col-md-2 col-lg-3">
+                <div class="logo col-12 col-lg-3">
                     <a href="http://www.meta.mc/">
                         <img src="templates/meta/img/meta.png" alt="META MONACO - ART GALLERY">
                     </a>
                 </div>
-                <div class="menu col-12 col-md-10 col-lg-9">
+                <div class="menu col-12 col-lg-9">
                     <jdoc:include type="modules" name="position-0" />
                     <div class="clearfix header-extra">
                         <jdoc:include type="modules" name="position-1" />

@@ -10,6 +10,7 @@
 defined('_JEXEC') or die;
 ?>
 
-<label class="search-button<?php echo $moduleclass_sfx; ?>" data-toggle="collapse" href="#searchForm" role="button" aria-expanded="false" aria-controls="searchForm"data-focus="#mod-search-searchword">
+
+<div class="copyright text-center text-lg-left<?php echo $moduleclass_sfx; ?>" <?php if ($params->get('backgroundimage')) : ?> style="background-image:url(<?php echo $params->get('backgroundimage'); ?>)"<?php endif; ?> >
 	<?php echo $module->content; ?>
-</label>
+</div>
