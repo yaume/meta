@@ -40,11 +40,11 @@ include_once JPATH_THEMES . '/' . $this->template . '/lib/head.php';
             </div>
         </div>
     </header>
-    <main>
+    <main class="container">
         <jdoc:include type="message" />
         <jdoc:include type="component" />
     </main>
-    <footer class="fixed-bottom">
+    <footer>
         <div class="container">
             <div class="row">
                 <jdoc:include type="modules" name="position-14" />
