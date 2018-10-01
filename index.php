@@ -21,7 +21,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/lib/head.php';
 
 </head>
 
-<body>
+<body class="<?php echo $pageclass ?>">
     <header class="header fixed-top">
         <div class="container">
             <div class="row">

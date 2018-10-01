@@ -86,6 +86,7 @@ $app 		= JFactory::getApplication();
 $pageParams  	= $app->getParams();
 $sitename	= $app->getCfg('sitename');
 $title = $this->getTitle();
+$pageclass = $pageParams->get( 'pageclass_sfx' );
 // Returns a reference to the global document object
 $doc = JFactory::getDocument();
 $base = $this->baseurl;
