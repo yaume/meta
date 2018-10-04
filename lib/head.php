@@ -1,10 +1,10 @@
 <?php defined('_JEXEC') or die;
 /* =====================================================================
-Template: Patty Saveurs
+Template: Meta
 Author:   guillaume@ordi-service.fr
 Version:  1.0
-Created:  September 2015
-Copyright:  Guillaume - (C) 2015 - All rights reserved
+Created:  September 2018
+Copyright:  Guillaume - (C) 2018 - All rights reserved
 Licenses: GNU/GPL v3 or later http://www.gnu.org/licenses/gpl-3.0.html
 ===================================================================== */
 
@@ -135,4 +135,3 @@ include_once JPATH_THEMES . '/' . $this->template . '/lib/favicon.php';
 include_once JPATH_THEMES . '/' . $this->template . '/lib/opengraph.php';
 //Add your styles
 $doc->addStyleSheet($template . '/css/meta.css');
-$doc->addScript($template .'/js/vendor/modernizr.js');

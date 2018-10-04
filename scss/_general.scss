@@ -14,7 +14,6 @@
 //   transition: background-color 5000s ease-in-out 0s;
 // }
 body{
-    margin-bottom: 80px;
     margin-top:75px;
 }
 .home main.container{
@@ -24,7 +23,6 @@ body{
 }
 @include media-breakpoint-down(md) {
     body{
-        margin-bottom: 180px;
         margin-top:75px;
     }
 }

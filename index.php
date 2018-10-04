@@ -50,6 +50,7 @@ include_once JPATH_THEMES . '/' . $this->template . '/lib/head.php';
                 <jdoc:include type="modules" name="position-14" />
             </div>
         </div>
+        <jdoc:include type="modules" name="position-15" />
     </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
